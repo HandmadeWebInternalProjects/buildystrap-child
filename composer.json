@@ -17,5 +17,8 @@
             "BuildystrapChild\\": "src"
         }
     },
-    "scripts": {}
+    "scripts": {
+        "dev": "composer install",
+        "build": "composer install --no-dev"
+    }
 }
