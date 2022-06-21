@@ -5,7 +5,7 @@ namespace BuildystrapChild;
 class Theme
 {
     /**
-     * Enqueue Theme Styles
+     * Enqueue Theme Styles.
      *
      * @return void
      */
@@ -21,7 +21,7 @@ class Theme
     }
 
     /**
-     * Enqueue Theme Scripts
+     * Enqueue Theme Scripts.
      *
      * @return void
      */
