@@ -2,6 +2,7 @@
 
 namespace BuildystrapChild;
 
+use function get_stylesheet_directory_uri;
 use function wp_enqueue_script;
 use function wp_enqueue_style;
 
@@ -20,7 +21,7 @@ class Theme
         // Font Awesome
         // wp_enqueue_style('font-awesome', 'https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css');
 
-        wp_enqueue_style('child-style', get_stylesheet_uri() . '/dist/css/child-style.css', ['parent-style']);
+        wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/dist/css/child-style.css', ['parent-style']);
     }
 
     /**
@@ -30,6 +31,6 @@ class Theme
      */
     public static function enqueue_scripts()
     {
-        wp_enqueue_script('child-script', get_stylesheet_uri() . '/dist/js/child-script.js', ['parent-script']);
+        wp_enqueue_script('child-script', get_stylesheet_directory_uri() . '/dist/js/child-script.js', ['parent-script']);
     }
 }
